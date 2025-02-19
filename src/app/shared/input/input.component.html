@@ -1,0 +1,14 @@
+<div class="relative w-full">
+  <input pInputText [(ngModel)]="value" [type]="tipoDeValor" class="w-full" />
+  @if(isPassword) { @if(tipoDeValor === 'password') {
+  <i
+    class="pi pi-eye-slash absolute right-2 top-1/2 -translate-x-1/2 text-black"
+    (click)="togglePassword()"
+  ></i>
+  } @else {
+  <i
+    class="pi pi-eye absolute right-2 top-1/2 -translate-x-1/2 text-black"
+    (click)="togglePassword()"
+  ></i>
+  } }
+</div>

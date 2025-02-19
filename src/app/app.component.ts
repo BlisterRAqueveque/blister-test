@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PrimeNG } from 'primeng/config';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: false,
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'test';
+  title = 'Nombre a la página';
+
+  private readonly primeng = inject(PrimeNG);
+
+  ngOnInit() {
+    this.primeng.ripple.set(true);
+  }
 }
