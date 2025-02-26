@@ -8,10 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  test(event: any) {
-    console.log(event);
-    console.log(typeof event);
-  }
   password!: string;
   username!: string;
 

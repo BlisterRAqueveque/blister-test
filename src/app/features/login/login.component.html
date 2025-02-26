@@ -1,20 +1,22 @@
-<p class="center">login works!</p>
+<div class="h-dvh w-screen flex items-center justify-center">
+  <div class="max-w-[80%] w-96 shadow-lg bg-gray-100 p-4 rounded-lg">
+    <!-- Usuario -->
+    <label>Usuario</label>
+    <app-input [(value)]="username" [tipoDeValor]="'email'" />
+    <br />
+    <label>Contraseña</label>
+    <!-- Contraseña -->
+    <app-input [(value)]="password" [tipoDeValor]="'password'" />
 
-<!-- Usuario -->
-<label>Usuario</label>
-<app-input [(value)]="username" [tipoDeValor]="'email'" />
-<br />
-<label>Contraseña</label>
-<!-- Contraseña -->
-<app-input [(value)]="password" (valueChange)="test($event)" [tipoDeValor]="'password'" />
-
-<br />
-<div class="w-full flex justify-center items-center">
-  <button
-    class="underline-none bg-purple-600 text-white p-1 rounded-md shadow-md active:-translate-y-1 transition-all duration-200"
-    pRipple
-    (click)="login()"
-  >
-    Ingresar
-  </button>
+    <br />
+    <div class="w-full flex justify-center items-center">
+      <button
+        class="underline-none bg-purple-600 text-white p-1 rounded-md shadow-md active:-translate-y-1 transition-all duration-200"
+        pRipple
+        (click)="login()"
+      >
+        Ingresar
+      </button>
+    </div>
+  </div>
 </div>

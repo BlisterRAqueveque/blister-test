@@ -30,6 +30,7 @@ export class InputComponent {
   ngOnInit() {
     this.isPassword = this.tipoDeValor == 'password';
   }
+  
   ngAfterViewInit() {}
   ngOnDestroy() {}
 }
