@@ -5,6 +5,6 @@ export interface Usuario {
 }
 
 export interface Login {
-  usuario: string;
-  contrasenia: string;
+  username: string;
+  password: string;
 }
